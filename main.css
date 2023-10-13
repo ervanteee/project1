@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Netflix Sans';
+    letter-spacing: 0;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff');
+    src: url('../fonts/BebasNeue/BebasNeue Thin.otf') format('opentype');
+
+}
+
+body{
+    background-color: #141414;
+}
+
+
+/* Navbar CSS */
+
+.navbar{
+    margin-bottom: 5% !important;
+}
+.nav-link{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e5e5e5;
+    cursor: pointer;
+}   
+
+.nav-link:hover{
+    color: #999;
+}
+
+.logos{
+    font-family:"BebasNeue";
+    font-style:normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: #e50914;
+    display: inline-block;
+    padding: 0 4%;
+    letter-spacing: 0.1em;
+    transform: translateZ(0);
+}
+
+.scroll-color{
+    background-color: #141414;
+    transition: ease-in-out 0.9s;
+}
+
+.scroll-none{
+    background-color: transparent;
+    transition: ease-in-out 0.9s;
+
+}
+
+#srchIcon{
+    font-size: 25px;
+    margin-right: 2%;
+    color: white;
+    cursor: pointer;
+}
+
+#hideSearch{
+    display: none;
+    transition: ease-in-out 0.6s;
+}
+
+.img-size{
+    height:300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.img-size:hover{
+    -webkit-filter: blur(1.4px); /* Chrome, Safari, Opera */
+    filter: blur(1.4px);
+    scale: 102%;
+}
+
+/* card CSS */
+
+
+.judulFilm{
+    display: flex;
+}
+.garisJudul{
+    font-weight:bolder;
+    margin-left: 4%;
+    padding-right: 0.5em;
+    font-size: 1.8em;
+    color: red;
+}
+.judul{
+    font-family:'Roboto, Sans serif';
+    padding-top: 0.4em;
+    font-size: 1.3em;
+    color: #e5e5e5;
+}
+.card{
+    border:0;
+    padding: 0;
+    max-width: 14em;
+    background-color: #141414;
+    max-height: 490px;
+}
+
+.card-body{
+    padding: 0;
+    padding-top: 1em;
+}
+
+.card-title{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+
+.card-text{
+    color: rgb(186, 10, 10);
+}
+.play:hover:after{
+    content:url("https://www.wonderplugin.com/download/playbutton.png");
+    z-index:90;
+    position:absolute;
+    top:40%;
+    left:50%;
+    margin-left:-32px;
+    margin-top:-32px;
+}
+
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    margin-top: 100px;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
